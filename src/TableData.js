@@ -33,7 +33,8 @@ export default class TableData extends React.Component{
                         <tr key={user.id}>
                             <td>{user.id}</td>
                             <td>{user.name}</td>
-                            <td>{user.address}</td>
+                            <td>{user.age}</td>
+                            <td>{user.gender}</td>
                         </tr>
                         /*<Row id={user.id} name={user.name} address={user.address}></Row>*/
                         )

@@ -9,7 +9,7 @@ export default class TableHeader extends React.Component{
         };
     }
     render(){
-        return <tr><th>Id</th><th>Name</th><th>Address</th></tr>;
+        return <tr><th>Id</th><th>Name</th><th>Age</th><th>Gender</th></tr>;
     }
 }
 /*export default function Header(){

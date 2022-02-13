@@ -5,11 +5,11 @@ import axios from 'axios';
 class UserData {
 
     getUsers(){
-        return axios.get('http://localhost:8002/getEmployees');
+        return axios.get('http://localhost:8765/my-users/users');
     }
 
     saveNewUser(data){
-        return axios.post('http://localhost:8002/createNewEmployee',data);
+        return axios.post('http://localhost:8765/my-users/users',data);
     }
 }
 export default new UserData();

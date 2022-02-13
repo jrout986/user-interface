@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link, withRouter} from "react-router-do
 class CreateForm extends React.Component {
   constructor(){
     super();
-    this.state={name:"",address:""};
+    this.state={name:""};
   }
 
   handleSubmit(e){
@@ -34,8 +34,12 @@ class CreateForm extends React.Component {
             <input className="form-control" name="name" onChange={this.handleChange.bind(this)}/>
           </div>
           <div className="form-group">
-            <label>Address:</label>
-            <input className="form-control" name="address" onChange={this.handleChange.bind(this)} />
+            <label>Age:</label>
+            <input className="form-control" name="age" onChange={this.handleChange.bind(this)} />
+          </div>
+          <div className="form-group">
+            <label>Gender:</label>
+            <input className="form-control" name="gender" onChange={this.handleChange.bind(this)} />
           </div>
           <input type="submit" className="btn btn-info" value="Create"/>
         </form>
